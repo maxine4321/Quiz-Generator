@@ -1,0 +1,111 @@
+/* General body and container styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#options {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Option buttons styling */
+#options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#options button:hover {
+  transform: scale(1.05);  /* Slight scale-up on hover */
+}
+
+/* Correct answer */
+#options button.correct {
+  background-color: #28a745 !important;
+  color: white;
+}
+
+/* Wrong answer */
+#options button.wrong {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+#next {
+  margin-top: 20px;
+  background-color: #17a2b8;
+}
+
+#next:hover {
+  background-color: #138496;
+}
+
+/* Result section styling */
+#result-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#score {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 28px;
+}
+
+#result-section button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#result-section button:hover {
+  background-color: #218838;
+}
